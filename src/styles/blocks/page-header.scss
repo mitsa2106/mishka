@@ -1,0 +1,71 @@
+.page-header {
+  @include container();
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0 -1px 0 0 $box-shadow;
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 86px;
+    height: 80px;
+  }
+}
+
+.page-header__logo[href] {
+  &:hover {
+    opacity: 0.6;
+    transition-duration: $time;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media ($tablet-widths) {
+  .page-header {
+    @include container();
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: none;
+
+    &__logo {
+      width: 320px;
+      height: 88px;
+    }
+
+    &__logo img {
+      padding-top: 20px;
+      width: 113px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    @include container();
+    position: relative;
+    box-shadow: none;
+
+    &__logo {
+      width: 149px;
+      height: 88px;
+      margin: 0;
+      padding-left: 450px;
+
+      //чтобы поднять .main-menu вверх на 88 px
+      z-index: 1;
+      position: relative;
+    }
+
+    &__logo img {
+      padding-top: 9px;
+      width: 149px;
+    }
+  }
+
+
+}

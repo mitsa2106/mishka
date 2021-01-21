@@ -1,7 +1,27 @@
+//импорт шрифтов, переменных, миксинов, общих св-в
+@import "base/fonts";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/functions";
-@import "vendor/libs";
-@import "base/fonts";
 @import "base/general";
-@import "../blocks/modules";
+
+//импорт сетки
+@import "blocks/grid";
+
+//импорт основных блоков
+@import "blocks/page-header";
+@import "blocks/main-menu";
+
+//импорт модулей Главной страницы
+
+//импорт модулей страницы Каталога
+
+//импорт модулей страницы Формы
+
+//@import "helpers/functions";
+//@import "vendor/libs";
+
+//@import "../blocks/modules";
+
+
+
+

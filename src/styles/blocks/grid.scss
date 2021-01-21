@@ -1,0 +1,30 @@
+* {
+  font-family: "OpenSans", "Calibri", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  min-width: 260px;
+}
+
+
+@media ($tablet-widths) {
+  .page-wrapper {
+    min-width: 668px;
+  }
+
+}
+
+@media ($desktop-widths) {
+  .page-wrapper {
+    min-width: 1050px;
+  }
+
+
+
+}
