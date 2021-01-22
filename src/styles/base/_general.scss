@@ -1,11 +1,13 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul,p {
     margin: 0;
     padding: 0;
+    color: $color-text-grey;
 }
 
 a {
     text-decoration: none;
     color: $color-text-grey;
+    cursor: pointer;
 }
 
 //.container {
