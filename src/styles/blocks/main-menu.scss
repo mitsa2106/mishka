@@ -103,7 +103,7 @@
 }
 
 .main-menu__title--basket {
-  box-shadow: inset 0 -1px 0 0 $box-shadow;
+  //box-shadow: inset 0 -1px 0 0 $box-shadow;
 }
 
 
@@ -277,10 +277,6 @@
   .main-menu {
     margin-top: -88px;
     z-index: 0;
-  }
-
-  .main-menu__list {
-    box-shadow: inset 0 -1px 0 0 $box-shadow;
   }
 
   .main-menu__item {
