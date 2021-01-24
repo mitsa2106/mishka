@@ -1,3 +1,6 @@
+body {
+    background-color: $bg-color;
+}
 h1, h2, h3, h4, h5, h6, ul,p {
     margin: 0;
     padding: 0;
@@ -8,6 +11,33 @@ a {
     text-decoration: none;
     color: $color-text-grey;
     cursor: pointer;
+}
+
+.btn {
+    display: block;
+    color: $color-text-grey;
+    border: 2px solid $color-text-grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $color-text-grey;
+        color: $color-text-white;
+        transition-duration: $time;
+    }
+
+    &:active {
+        color: $bg-color-opacity;
+    }
+}
+
+.arrow-btn {
+    display: block;
+    width: 50%;
+    height: 52px;
+    border: none;
+    box-shadow: inset 0 0 0 1px $box-shadow;
 }
 
 .wide {

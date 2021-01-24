@@ -91,26 +91,11 @@
 }
 
 .best-product__btn {
-  display: block;
   width: 260px;
   height: 52px;
   font-size: 17px;
   line-height: 20px;
-  font-weight: 700;
-  border: 2px solid $color-text-grey;
-  padding: 15px 20px;
-  text-transform: uppercase;
-  text-align: center;
-
-  &:hover {
-    background-color: $color-text-grey;
-    color: $color-text-white;
-    transition-duration: $time;
-  }
-
-  &:active {
-    color: $bg-color-opacity;
-  }
+  padding: 15px 0;
 }
 
 @media ($tablet-widths) {
