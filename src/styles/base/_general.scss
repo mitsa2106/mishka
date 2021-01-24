@@ -10,6 +10,28 @@ a {
     cursor: pointer;
 }
 
+.wide {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-image: url("../../../img/svg/zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: left bottom;
+ }
+
+@media ($tablet-widths) {
+    .wide {
+        height: 18px;
+    }
+}
+
+@media ($desktop-widths) {
+    .wide {
+        height: 23px;
+    }
+}
+
 //.container {
 //    @include container();
 //    @include sm(max-width, rem(510));
