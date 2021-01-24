@@ -1,0 +1,159 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-text-black;
+  letter-spacing: 1.2px;
+  padding-bottom: 30px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 260px;
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-text-black;
+  letter-spacing: 0.8px;
+}
+
+.about-item__logo {
+   position: relative;
+   padding-top: 55px;
+   padding-bottom: 30px;
+}
+
+.about-item__logo:last-child {
+  padding-bottom: 0;
+}
+
+.about-item__logo--flower:before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 37px;
+  top: 0;
+  left: 8px;
+  background-image: url("../../../img/svg/flower.svg");
+  background-repeat: no-repeat;
+}
+
+.about-item__logo--cart:before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  background-image: url("../../../img/svg/cart.svg");
+  background-repeat: no-repeat;
+}
+
+.about-item__logo--heart:before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  top: 0;
+  left: 10px;
+  background-image: url("../../../img/svg/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.about-item__logo--ball:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  top: 0;
+  left: 3px;
+  background-image: url("../../../img/svg/ball.svg");
+  background-repeat: no-repeat;
+}
+
+.about-item__logo--rocket:before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  top: 0;
+  left: -5px;
+  background-image: url("../../../img/svg/rocket.svg");
+  background-repeat: no-repeat;
+}
+
+.about-item__logo--gift:before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  top: 0;
+  left: 3px;
+  background-image: url("../../../img/svg/gift.svg");
+  background-repeat: no-repeat;
+}
+
+@media ($tablet-widths) {
+  .about {
+    width: 668px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding-bottom: 45px;
+  }
+
+  .about-item {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 668px;
+    height: 450px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-item__logo {
+    width: 333px;
+    padding-bottom: 35px;
+  }
+
+  .about-item__logo:last-child {
+    padding-bottom: 35px;
+  }
+}
+
+@media ($desktop-widths) {
+  .about {
+    width: 700px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-item {
+    width: 700px;
+  }
+}
