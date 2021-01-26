@@ -1,16 +1,64 @@
-//.page-main {
-//  @include container();
-//}
-//
-//@media ($tablet-widths) {
-//  .page-main {
-//    @include container();
-//  }
-//
-//}
-//
-//@media ($desktop-widths) {
-//  .page-main {
-//    @include container();
-//  }
-//}
+.page-main {
+  @include container();
+  width: 100%;
+  text-align: center;
+  box-shadow: inset 0 1px 0 0 $box-shadow;
+
+  &__title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #010000;
+    letter-spacing: 0.7px;
+    width: 100%;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    background-color: $bg-color-footer;
+  }
+
+  &__zigzag {
+    display: none;
+  }
+}
+
+@media ($tablet-widths) {
+  .page-main {
+    width: 100%;
+    padding: 0;
+    margin-top: -60px;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      padding-top: 98px;
+      padding-bottom: 77px;
+    }
+
+    &__zigzag {
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-image: url("../../img/svg/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position: left bottom;
+      margin-top: -11px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-main {
+    width: 100%;
+    padding: 0;
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      padding-bottom: 100px;
+    }
+  }
+}
