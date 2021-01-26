@@ -51,7 +51,7 @@
 }
 
 .blue-btn:hover {
-  height: 108px;
+  color: rgba(0,0,0,0.7);
   transition-duration: $time;
 
   &:after {
@@ -60,7 +60,6 @@
 }
 
 .blue-btn:active {
-  height: 108px;
   color: rgba(0,0,0,0.3);
   transition-duration: $time;
 
@@ -127,7 +126,6 @@
   }
 
   .cute-stuff__buttons {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -141,17 +139,6 @@
     line-height: 30px;
     padding-top: 30px;
     padding-left: 36px;
-
-    &:hover {
-      height: 119px;
-      color: rgba(0,0,0,0.7);
-      transition: $time;
-    }
-    &:active {
-      height: 119px;
-      color: rgba(0,0,0,0.3);
-      transition: $time;
-    }
   }
 
   .interior-btn {
