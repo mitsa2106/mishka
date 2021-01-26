@@ -1,0 +1,24 @@
+.catalog-main {
+  @include container();
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+@media ($tablet-widths) {
+  .catalog-main {
+    padding-top: 68px;
+  }
+}
+
+@media ($desktop-widths) {
+  .catalog-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 116px;
+  }
+}
