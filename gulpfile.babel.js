@@ -6,21 +6,26 @@ const requireDir = require("require-dir"),
     paths = {
         views: {
             src: [
+                "./src/views/*.html",
                 "./src/views/**/*.html",
                 "./src/views/pages/*.html"
             ],
             dist: "./dist/",
             watch: [
                 "./src/blocks/**/*.html",
+                "./src/views/*.html",
                 "./src/views/**/*.html"
             ]
         },
         styles: {
-            src: "./src/styles/main.{scss,sass}",
+            src: [
+                "./src/styles/main.{scss,sass}"
+            ],
             dist: "./dist/styles/",
             watch: [
                 "./src/blocks/**/*.{scss,sass}",
-                "./src/styles/**/*.{scss,sass}"
+                "./src/styles/**/*.{scss,sass}",
+                "./src/styles/blocks/**/*.{scss,sass}"
             ]
         },
         scripts: {
@@ -37,7 +42,10 @@ const requireDir = require("require-dir"),
                 "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
             dist: "./dist/img/",
-            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}"
+            watch: [
+                "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}",
+                "./src/img/*.{jpg,jpeg,png,gif,svg,tiff}"
+            ]
         },
         sprites: {
             src: "./src/img/svg/*.svg",
