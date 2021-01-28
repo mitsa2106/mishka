@@ -49,18 +49,29 @@ a {
     background-repeat: repeat-x;
     background-size: contain;
     background-position: left bottom;
- }
 
-@media ($tablet-widths) {
-    .wide {
-        height: 18px;
+    @media ($tablet-widths) {
+        .wide {
+            height: 18px;
+        }
+    }
+
+    @media ($desktop-widths) {
+        .wide {
+            height: 23px;
+        }
     }
 }
 
-@media ($desktop-widths) {
-    .wide {
-        height: 23px;
-    }
+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: $color-text-black;
+    text-align: left;
 }
 
 //.container {

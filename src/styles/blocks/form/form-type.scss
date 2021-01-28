@@ -1,0 +1,64 @@
+.form-type__label {
+  padding-left: 62px;
+  padding-top: 9px;
+  margin-bottom: 15px;
+
+  label:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-type__label input[type=radio] {
+  position: absolute;
+  //*прячем браузерскую радиокнопку для стилизации своей
+  opactiy: 0;
+  width:0;
+  height:0;
+  //*
+}
+
+//**** стилизуем свою радиокнопку
+.form-type__label span {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 39px;
+  height: 39px;
+  background-color: $bg-color;
+  border: 1px solid $color-text-black;
+  border-radius: 50%;
+  transition-duration: $time;
+}
+
+.form-type__label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* middle spot */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: $bg-line;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.form-type__label:hover span {
+  border: 1px solid $bg-line;
+}
+
+.form-type__label:active span {
+  border: 1px solid $bg-radio;
+}
+
+.form-type__label input:checked ~ span {
+  background-color: $bg-color;
+  //border: 1px solid $bg-radio;
+  border: 1px solid $color-text-black;
+}
+
+.form-type__label input:checked ~ span:after {
+  display:block;
+}

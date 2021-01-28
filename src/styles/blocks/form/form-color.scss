@@ -1,0 +1,67 @@
+.form-color__label {
+  padding-left: 62px;
+  padding-top: 9px;
+  margin-bottom: 34px;
+}
+
+.form-color__label input[type=checkbox]{
+  position: absolute;
+  //*прячем браузерскую радиокнопку для стилизации своей
+  opactiy: 0;
+  width:0;
+  height:0;
+  //*
+}
+
+//**** стилизуем свой чекбокс
+
+.form-color__label span{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 39px;
+  height: 39px;
+  background-color: $bg-color;
+  border: 1px solid $color-text-black;
+  transition-duration: $time;
+}
+
+.form-color__label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* check icon */
+  left: 13px;
+  top: 5px;
+  width: 7px;
+  height: 20px;
+  border: solid $bg-line;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.form-color__label:hover span {
+  border: 1px solid $bg-line;
+}
+
+.form-color__label:active span {
+  border: 1px solid $bg-radio;
+}
+
+.form-color__label input:checked ~ span {
+  background-color: $bg-color;
+  //border: 1px solid $bg-radio;
+  border: 1px solid $color-text-black;
+}
+
+.form-color__label input:checked ~ span:after {
+  display:block;
+}
+//****************
+
+@media ($tablet-widths) {
+}
+
+@media ($desktop-widths) {
+}

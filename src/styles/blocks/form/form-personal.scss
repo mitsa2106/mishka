@@ -1,0 +1,39 @@
+.form-personal {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+.form-personal__label {
+  display: block;
+  width: 260px;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-personal__input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid $color-text-black;
+  font-size: 17px;
+  line-height: 18px;
+
+  &:hover {
+    border-bottom: 2px solid $bg-line;
+    transition-duration: $time;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $bg-line;
+  }
+}
+
+@media ($tablet-widths) {
+}
+
+@media ($desktop-widths) {
+}
