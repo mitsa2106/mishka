@@ -64,6 +64,11 @@
 }
 
 @media ($tablet-widths) {
+  .form-type {
+    display: flex;
+    flex-direction: column;
+  }
+
   .form-type__label {
     padding-left: 82px;
     padding-top: 0;

@@ -1,8 +1,4 @@
 .form-phone {
-  //display: flex;
-  //flex-direction: row;
-  //flex-wrap: wrap;
-  //width: 260px;
   position: relative;
 }
 
@@ -51,11 +47,14 @@
     font-size: 19px;
     background-color: $bg-color-footer;
   }
-
-  .form-phone__input-icon {
-    right: 25px;
-    top: 12px;
-  }
 }
 
-@media ($desktop-widths) {}
+@media ($desktop-widths) {
+  .form-phone__input {
+    width: 700px;
+  }
+
+  .form-phone__input-icon {
+    right: 180px;
+  }
+}

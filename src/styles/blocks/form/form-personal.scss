@@ -39,6 +39,7 @@
 
   .form-personal__label {
     width: 501px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 24px;
@@ -58,4 +59,7 @@
 }
 
 @media ($desktop-widths) {
+  .form-personal__label {
+    width: 700px;
+  }
 }

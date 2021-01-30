@@ -1,8 +1,4 @@
 .form-email {
-  //display: flex;
-  //flex-direction: row;
-  //flex-wrap: wrap;
-  //width: 260px;
   position: relative;
 }
 
@@ -58,4 +54,12 @@
   }
 }
 
-@media ($desktop-widths) {}
+@media ($desktop-widths) {
+  .form-email__input {
+    width: 700px;
+  }
+
+  .form-email__input-icon {
+    right: 185px;
+  }
+}

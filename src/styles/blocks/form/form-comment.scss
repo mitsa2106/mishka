@@ -25,12 +25,12 @@
 @media ($tablet-widths) {
   .form-comment textarea {
     width: 501px;
-    height: 140px;
-
-    padding: 15px;
-
     font-size: 19px;
   }
 }
 
-@media ($desktop-widths) {}
+@media ($desktop-widths) {
+  .form-comment textarea {
+    width: 700px;
+  }
+}

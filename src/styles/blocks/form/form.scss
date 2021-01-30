@@ -200,7 +200,32 @@
 }
 
 @media ($desktop-widths) {
+  .form {
+    margin-bottom: 50px;
+  }
   .form__item--wrapper {
     width: 1050px;
+  }
+
+  .form__item--required .form__item--wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .form__item--color {
+    min-height: 228px;
+  }
+
+  .form__item--required {
+    padding-top: 0;
+  }
+
+  .form__title {
+    width: 175px;
+    padding-left: 61px;
+  }
+
+  .form__container {
+    width: 875px;
   }
 }

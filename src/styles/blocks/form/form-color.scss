@@ -107,4 +107,16 @@
 }
 
 @media ($desktop-widths) {
+  .form-color {
+    min-height: 128px;
+    justify-content: flex-start;
+  }
+
+  .form-color__label {
+    width: 263px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
 }
