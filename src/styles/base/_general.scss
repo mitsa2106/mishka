@@ -12,6 +12,7 @@ a {
     text-decoration: none;
     color: $color-text-grey;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .btn {
@@ -21,6 +22,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    box-sizing: border-box;
 
     &:hover {
         background-color: $color-text-grey;
@@ -73,6 +75,21 @@ label {
     color: $color-text-black;
     text-align: left;
 }
+
+@media ($tablet-widths) {
+    label {
+        font-size: 19px;
+        line-height: 52px;
+        letter-spacing: -0.1px;
+    }
+}
+
+@media ($desktop-widths) {
+    label {
+
+    }
+}
+
 
 //.container {
 //    @include container();

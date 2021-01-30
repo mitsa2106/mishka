@@ -1,15 +1,10 @@
 .form-phone {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 260px;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: wrap;
+  //width: 260px;
   position: relative;
 }
-//.form-phone__label {
-//  display: block;
-//  width: 260px;
-//  margin-bottom: 22px;
-//}
 
 .form-phone__input {
   width: 100%;
@@ -49,3 +44,18 @@
     }
   }
 }
+
+@media ($tablet-widths) {
+  .form-phone__input {
+    padding-left: 16px;
+    font-size: 19px;
+    background-color: $bg-color-footer;
+  }
+
+  .form-phone__input-icon {
+    right: 25px;
+    top: 12px;
+  }
+}
+
+@media ($desktop-widths) {}

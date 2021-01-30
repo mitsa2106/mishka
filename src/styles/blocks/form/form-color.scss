@@ -61,6 +61,49 @@
 //****************
 
 @media ($tablet-widths) {
+  .form-color {
+    min-height: 203px;
+  }
+
+  .form-color__label {
+    padding-left: 82px;
+    padding-right: 15px;
+    padding-top: 0;
+    margin-bottom: 24px;
+
+    width: 240px;
+
+    &:nth-child(5),
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-color__label span{
+    width: 54px;
+    height: 54px;
+    border: 2px solid $color-text-black;
+  }
+
+  .form-color__label span:after {
+    /* check icon */
+    left: 17px;
+    top: 5px;
+    width: 13px;
+    height: 28px;
+  }
+
+  .form-color__label:hover span {
+    border: 2px solid $bg-line;
+  }
+
+  .form-color__label:active span {
+    border: 2px solid $bg-radio;
+  }
+
+  .form-color__label input:checked ~ span {
+    border: 2px solid $color-text-black;
+  }
 }
 
 @media ($desktop-widths) {

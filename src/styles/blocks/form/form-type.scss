@@ -62,3 +62,40 @@
 .form-type__label input:checked ~ span:after {
   display:block;
 }
+
+@media ($tablet-widths) {
+  .form-type__label {
+    padding-left: 82px;
+    padding-top: 0;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-type__label span {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-text-black;
+  }
+
+  .form-type__label span:after {
+    width: 21px;
+    height: 21px;
+  }
+
+  .form-type__label:hover span {
+    border: 2px solid $bg-line;
+  }
+
+  .form-type__label:active span {
+    border: 2px solid $bg-radio;
+  }
+
+  .form-type__label input:checked ~ span {
+    border: 2px solid $color-text-black;
+  }
+}
+
+@media ($desktop-widths) {}

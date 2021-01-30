@@ -1,15 +1,10 @@
 .form-email {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 260px;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: wrap;
+  //width: 260px;
   position: relative;
 }
-//.form-email__label {
-//  display: block;
-//  width: 260px;
-//  margin-bottom: 22px;
-//}
 
 .form-email__input {
   width: 100%;
@@ -48,3 +43,19 @@
     }
   }
 }
+
+@media ($tablet-widths) {
+  .form-email__input {
+    margin-top: -17px;
+    padding-left: 16px;
+    font-size: 19px;
+    background-color: $bg-color-footer;
+  }
+
+  .form-email__input-icon {
+    right: 28px;
+    top: -5px;
+  }
+}
+
+@media ($desktop-widths) {}

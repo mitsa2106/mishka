@@ -33,6 +33,28 @@
 }
 
 @media ($tablet-widths) {
+  .form-personal {
+    flex-direction: column;
+  }
+
+  .form-personal__label {
+    width: 501px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-personal__input {
+    width: 100%;
+    margin-left: 28px;
+    padding-left: 19px;
+    padding-right: 10px;
+    font-size: 19px;
+  }
 }
 
 @media ($desktop-widths) {
