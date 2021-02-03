@@ -232,6 +232,8 @@
   }
 
   .extra-menu__list {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
