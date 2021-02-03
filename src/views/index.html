@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- Фавиконы сайта -->
     <link rel="icon" sizes="57x57" href="../img/favicon/mishka-57x57.png"  data-mce-href="../img/favicon/mishka-57x57.png">
@@ -28,9 +29,6 @@
     <link rel="icon" type="image/png" href="../img/favicon/mishka-16x16.png" sizes="16x16" data-mce-href="../img/favicon/mishka-16x16.png">
 </head>
 <body>
-
-<!-- обертка для всего содержимого-->
-<!--<div class="page-wrapper">-->
 
     <header class="page-header">
         <!-- Блок меню навигации -->
@@ -147,27 +145,27 @@
               <div class="reviews__wrapper">
                   <h3 class="reviews__title">Отзывы</h3>
 
-                  <div class="reviews__review review">
-                      <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных   инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают   больше лайков!</p>
-                      <p class="review__author">Анастасия Красильникова</p>
-                      <a href="" class="review__nickname">@misssssiskras</a>
-                  </div>
+                  <div class="reviews__slider">
+                      <div class="reviews__review review">
+                          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных   инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают   больше лайков!</p>
+                          <p class="review__author">Анастасия Красильникова</p>
+                          <a href="" class="review__nickname">@misssssiskras</a>
+                      </div>
 
-                  <div class="reviews__review review review--hidden">
-                      <p class="review__text">Детская комната преобразилась благодаря предметам интерьера от "Мишка"!</p>
-                      <p class="review__author">Екатерина</p>
-                      <a href="" class="review__nickname">@kate</a>
-                  </div>
+                      <div class="reviews__review review review--hidden">
+                          <p class="review__text">Детская комната преобразилась благодаря предметам интерьера от "Мишка"!</p>
+                          <p class="review__author">Екатерина</p>
+                          <a href="" class="review__nickname">@kate</a>
+                      </div>
 
-                  <div class="reviews__review review review--hidden">
-                      <p class="review__text">Дочка и я очень сильно полюбили зайца, очень стильный, красивый! Дочка теперь с ним не расстается.</p>
-                      <p class="review__author">Людмила</p>
-                      <a href="" class="review__nickname">@ludmila</a>
+                      <div class="reviews__review review review--hidden">
+                          <p class="review__text">Дочка и я очень сильно полюбили зайца, очень стильный, красивый! Дочка теперь с ним не расстается.</p>
+                          <p class="review__author">Людмила</p>
+                          <a href="" class="review__nickname">@ludmila</a>
+                      </div>
                   </div>
 
                   <div class="reviews__arrow">
-                      <button class="reviews__arrow__left  arrow-btn" type="button"></button>
-                      <button class="reviews__arrow__right  arrow-btn" type="button"></button>
                   </div>
 
                   <a class="reviews__btn btn">Написать</a>
@@ -255,8 +253,30 @@
             </div>
         </div>
     </footer>
-<!--</div>-->
 
+
+<!--ПОДКЛЮЧАЕМ СЛАЙДЕР ПРИ ПОМОЩИ jquery и слайдера Slick
+        1. Подключаем компанент скрипт библиотеки jquery и скрипт слайдера Slick
+        2. находим блок .reviews__slider, где лежит слайд наш
+        3. делаем бесконечный переключатель infinite: true
+        4. делаем стрелки arrows: true,
+        5.говорим положи в наш .reviews__arrow свои стандартные (slick) кнопки переключатели (prevArrow и nextArrow)
+        6. говорим теперь поменяй свои стили кнопок  (prevArrow и nextArrow) на наши стили (reviews__arrow-left и reviews__arrow-right) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.reviews__slider').slick({
+            infinite: true,
+            arrows: true,
+            appendArrows: $('.reviews__arrow'),
+            prevArrow: '<button class="reviews__arrow-left  arrow-btn" type="button"></button>',
+            nextArrow: '<button class="reviews__arrow-right  arrow-btn" type="button"></button>'
+        });
+    });
+</script>
+
+<script src="../js/index.js"></script>
 
 
 </body>

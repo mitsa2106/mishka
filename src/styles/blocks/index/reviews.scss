@@ -62,20 +62,20 @@
   margin-bottom: 38px;
 }
 
-.reviews__arrow__left {
+.reviews__arrow-left {
   display: inline-block;
   width: 130px;
   background: url("../../../img/svg/icon-left-arrow.svg") no-repeat center;
 }
 
-.reviews__arrow__right {
+.reviews__arrow-right {
   display: inline-block;
   width: 130px;
   background: url("../../../img/svg/icon-right-arrow.svg") no-repeat center;
 }
 
-.reviews__arrow__left,
-.reviews__arrow__right {
+.reviews__arrow-left,
+.reviews__arrow-right {
   cursor: pointer;
   outline: none;
 
@@ -151,8 +151,8 @@
     margin: 0;
   }
 
-  .reviews__arrow__right,
-  .reviews__arrow__left {
+  .reviews__arrow-right,
+  .reviews__arrow-left {
     width: 50px;
   }
 
