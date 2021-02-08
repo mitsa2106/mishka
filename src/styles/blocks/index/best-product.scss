@@ -70,6 +70,12 @@
   margin-bottom: 25px;
   width: 260px;
   height: 315px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-size: 260px 315px;
+
 }
 
 .best-product__price-wrapper {
@@ -144,6 +150,7 @@
     width: 333px;
     height: 404px;
     margin: 0;
+    background-size: 333px 404px;
   }
 
   .best-product__price-wrapper {
@@ -192,5 +199,6 @@
     top: 70px;
     width: 525px;
     height: 636px;
+    background-size: 525px 636px;
   }
 }

@@ -24,6 +24,8 @@
   background-color: $bg-color-footer;
   background-repeat: no-repeat;
   background-position: center;
+  background-clip: border-box;
+  background-size: cover;
 }
 
 .catalog__details {
