@@ -58,9 +58,9 @@
       top: 0;
     }
   }
-
   //********
 }
+
 .main-menu__list {
     list-style-type: none;
     display: flex;
@@ -106,7 +106,6 @@
   //box-shadow: inset 0 -1px 0 0 $box-shadow;
 }
 
-
 .main-menu__search,
 .main-menu__basket {
   position: absolute;
@@ -126,26 +125,23 @@
 
 .extra-menu__list {
     display: none;
+}
+
+
+//АНИМАЦИЯ ПОЯВЛЕНИЯ МЕНЮ//
+@media (max-width: 767px) {
+  .main-menu__list {
+    list-style-type: none;
+    transition-duration: 1s;
   }
 
-////АНИМАЦИЯ ПОЯВЛЕНИЯ МЕНЮ//
-//.main-menu__list {
-//  &--invisible {
-//    display: flex;
-//    transform: translateY(-1000px);
-//    transition-duration: 1s;
-//  }
-//
-//  &--visible {
-//    display: flex;
-//    transition-duration: 1s;
-//  }
-//
-//  &--js-active {
-//    display: none;
-//  }
-//}
-////************************
+  .main-menu__list--hidden {
+    display: none;
+    transition-duration: 1s;
+    transform: translateY(-1000px);
+  }
+}
+
 
 @media ($tablet-widths) {
   .main-menu__toggle-wrapper {
@@ -161,6 +157,11 @@
 
     // тень нижнее подчеркивание
     //box-shadow: inset 0 -1px 0 0 $box-shadow;
+
+    &--invisible {
+      transform: none;
+      transition-duration: 0s;
+    }
   }
 
   .main-menu__item {
