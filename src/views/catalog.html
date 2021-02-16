@@ -45,7 +45,7 @@
             <div class="main-menu__toggle main-menu__toggle--crossed"></div>
         </a>
         <!-- элементы меню бургера -->
-        <ul class="main-menu__list main-menu__list--visible">
+        <ul class="main-menu__list">
             <li class="main-menu__item"><a href="catalog.html" class="main-menu__title">Каталог товаров</a></li>
             <li class="main-menu__item"><a href="form.html" class="main-menu__title">Вязание на заказ</a></li>
             <li class="main-menu__item"><a href="/search.html" class="main-menu__title main-menu__title--search">
@@ -246,8 +246,69 @@
         </div>
         <button class="modal-window__submit-btn btn" type="submit">ДОБАВИТЬ</button>
     </form>
+    <button class="modal-window__close" type="button"></button>
 </section>
 
+
+<!-- ОТКРЫТИЕ-ЗАКРЫТИЕ МЕНЮ БУРГЕР на мобильной версии-->
+<script>
+    var toggleWrapper = document.getElementsByClassName('main-menu__toggle-wrapper')[0];
+    var toggle = document.getElementsByClassName('main-menu__toggle')[0];
+    var menuList = document.getElementsByClassName("main-menu__list")[0];
+
+    function showMenu() {
+        menuList.classList.remove("main-menu__list--hidden");
+        menuList.classList.add("main-menu__list");
+        toggle.classList.add("main-menu__toggle--crossed");
+    }
+
+    function hideMenu() {
+        menuList.classList.remove("main-menu__list");
+        menuList.classList.add("main-menu__list--hidden");
+        toggle.classList.remove("main-menu__toggle--crossed");
+    }
+
+    menuList.classList.remove("main-menu__list--hidden");
+    toggle.classList.add("main-menu__toggle--crossed");
+
+    toggleWrapper.addEventListener('click', function(evt){
+        evt.preventDefault(); //отменяем действие по умолчанию
+
+        if (menuList.classList.contains("main-menu__list")) {
+            hideMenu();
+        } else {
+            showMenu();
+        }
+    });
+</script>
+
+<!-- ПОКАЗЫВАЕМ-СКРЫВАЕМ МОДАЛЬНОЕ ОКНО-->
+<script>
+    var orderBtn = document.querySelector('.production__btn');
+    var modal = document.querySelector('.modal-window');
+    var closeModal = document.querySelector('.modal-window__close');
+
+    orderBtn.addEventListener('click', function (evt) {
+        evt.preventDefault();  //отменяем действие по умолчанию
+        modal.classList.add('modal-show');
+    });
+
+    closeModal.addEventListener('click',function (evt) {
+        evt.preventDefault();
+        modal.classList.remove('modal-show');
+    });
+
+    // закрытие клавишей Esc
+    window.addEventListener('keydown', function (evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+        }
+
+        if (modal.classList.contains('modal-show')) {
+            modal.classList.remove('modal-show');
+        }
+    });
+</script>
 
 
 </body>
