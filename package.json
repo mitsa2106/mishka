@@ -68,9 +68,11 @@
         "stylelint-selector-bem-pattern": "^2.1.0",
         "webpack": "^4.30.0",
         "webpack-stream": "^5.2.1",
-        "yargs": "^15.4.1"
+        "yargs": "^15.4.1",
+        "jquery": "^3.5.1"
     },
     "dependencies": {
+        "eslint": "^7.20.0",
         "smart-grid": "^2.1.2"
     },
     "husky": {

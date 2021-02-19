@@ -9,7 +9,7 @@ module.exports = {
             "jquery": "jquery", 
             "window.jquery": "jquery", 
             "$": "jquery", 
-            "window.$": "jquery" 
+            "window.$": "jquery"
         }) 
     ],
     
@@ -57,5 +57,8 @@ module.exports = {
         alias: {
             "%modules%": path.resolve(__dirname, "src/blocks/modules")
         }
+    },
+    externals: {
+        "jquery": "jquery"
     }
 };
